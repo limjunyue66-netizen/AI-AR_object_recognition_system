@@ -1,0 +1,26 @@
+# Local secrets — never commit real keys
+config/config.php
+.env
+.env.*
+
+# Logs and cache / local DB
+storage/logs/*
+!storage/logs/.gitkeep
+storage/cache/*
+!storage/cache/.gitkeep
+storage/data/*.sqlite
+storage/data/*.sqlite-*
+!storage/data/.gitkeep
+!storage/data/.htaccess
+
+# Packaging / local archives
+*.zip
+*.rar
+*.7z
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

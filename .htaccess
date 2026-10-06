@@ -1,0 +1,13 @@
+# AI + AR Smart Object Recognition System
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+# Block sensitive paths from direct web access
+<IfModule mod_authz_core.c>
+  <If "%{REQUEST_URI} =~ m#/(config|includes|storage|database)/#">
+    Require all denied
+  </If>
+</IfModule>
